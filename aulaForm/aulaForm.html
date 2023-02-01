@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro da liga dos astronautas</title>
+</head>
+<body>
+    <h3>Cadastro da liga dos astronautas</h3>
+    <form>
+        <label for="Nome">Nome:</label>
+        <input type="text"><br><br>
+
+        <label for="Email">Email:</label>
+        <input type="email">
+
+        <label for="Password">- Password:</label>
+        <input type="password"><br><br>
+
+        <label for="nascimento">Data de nascimento:</label>    
+        <input type="date">    
+
+        <label for="foto">- Foto:</label>
+        <input type="file"><br><br>
+
+        <label for="nacionalidade">Nacionalidade:</label>
+        <select>
+            <option value="option1">Russo</option>
+            <option value="option1">Brasileira</option>
+            <option value="option1">Americano</option>
+        </select>
+
+        <label for="genero">- Genero</label>
+        <input type="radio" name="gender" value="male"> Male <!-- É preciso que a opção name sejam iguais para que possa marcar apenas 1 bolinha-->
+        <input type="radio" name="gender" value="female"> Female <br><br>
+
+        Suas principais qualidades: <br>
+        <label for="qualidade1">Inteligência</label>
+        <input type="checkbox">
+
+        <label for="qualidade2">| Resiliência</label>
+        <input type="checkbox">
+
+        <label for="qualidade3">| Preparo físico</label>
+        <input type="checkbox">
+
+        <label for="qualidade4">| Educação</label>
+        <input type="checkbox"> | <br><br>
+
+        <textarea name="description" id="description"  rows="10" cols="30" placeholder="Porque você gostaria de ser um astronauta?"></textarea><br><br>
+
+        <input type="submit" value="Criar">
+
+
+
+    </form>
+
+  
+</body>
+</html>
