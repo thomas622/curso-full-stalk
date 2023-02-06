@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* HEADER*/
+header{
+    background-color: #363636;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    border: 15px solid #363636;
+}
+.buttons{
+    display: flex;
+    gap: 30px;
+}
+.buttonHeader{
+    background-color: transparent;
+    color: white;
+    font-size: 17px;
+    border: none;
+    text-decoration: none;
+}
+.buttonHeader:hover{
+    border-bottom: 2px solid black;
+    padding-bottom: 5px;
+}
+
+.logo{
+    width: 200px;
+}
+
+/* INTRODUÇÃO */
+.welcome{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.bemvindo{
+    padding-top: 20px;
+    font-size: 25px;
+}
+.introducao{
+    font-size: 20px;
+    color: #525252;
+}
+
+/* GRADE */
+.main-content{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin-left: 70px;
+    grid-template-areas: 
+    "item1  item2   item3"
+    "item4  item5   item6"
+    "item7  item8   item9";
+}
+
+.item{
+    margin-top: 20px;
+    padding: 10px;
+}
+.item1{
+    grid-area: item1;
+}
+.item2{
+    grid-area: item2;
+}
+.item3{
+    grid-area: item3;
+}
+.item4{
+    grid-area: item4;
+}
+.item5{
+    grid-area: item5;
+}
+.item6{
+    grid-area: item6;
+}
+.item7{
+    grid-area: item7;
+}
+.item8{
+    grid-area: item8;
+}
+.item9{
+    grid-area: item9;
+}
+
+
+.sportMain{
+    width: 280px;
+    height: 180px;
+    border-radius: 20px;
+}
+
+.sportSec{
+    width: 280px;
+    height: 180px;
+    border-radius: 20px;
+}
