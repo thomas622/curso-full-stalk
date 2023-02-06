@@ -54,9 +54,9 @@ header{
     grid-template-columns: repeat(4,1fr);
     margin-left: 70px;
     grid-template-areas: 
-    "item1  item2   item3"
-    "item4  item5   item6"
-    "item7  item8   item9";
+    "item1  item2   item3   item10"
+    "item4  item5   item6   item10"
+    "item7  item8   item9   item10";
 }
 
 .item{
@@ -90,7 +90,21 @@ header{
 .item9{
     grid-area: item9;
 }
+.item10{
+    grid-area: item10;
+    background-color: #363636;
+    color: white;
+    font: 18px Arial;
+}
 
+/* LATERAL */
+.lateral{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    gap: 20px;
+}
 
 .sportMain{
     width: 280px;
