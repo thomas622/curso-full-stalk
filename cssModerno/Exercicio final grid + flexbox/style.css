@@ -10,23 +10,24 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 20px;
-    border: 15px solid #363636;
+    padding: 30px;
+    gap: 8px 15px;
+    flex-wrap: wrap;
 }
 .buttons{
     display: flex;
-    gap: 30px;
+    gap: 15px;
 }
 .buttonHeader{
     background-color: transparent;
     color: white;
+    padding: 6px;
     font-size: 17px;
-    border: none;
-    text-decoration: none;
+    border: 2px solid transparent;
+    cursor: pointer;
 }
 .buttonHeader:hover{
     border-bottom: 2px solid black;
-    padding-bottom: 5px;
 }
 
 .logo{
@@ -49,6 +50,11 @@ header{
 }
 
 /* GRADE */
+.container{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
 .main-content{
     display: grid;
     grid-template-columns: repeat(4,1fr);
@@ -169,3 +175,43 @@ a{
 }
 
 /* RESPONSIVIDADE */
+@media (max-width: 1220px){
+    .main-content{
+        grid-template-columns: repeat(3,1fr);
+        grid-template-areas: 
+        "item1  item2 item10"
+        "item3  item4 item10"
+        "item5  item6 item10"
+        "item7  item8 item10"
+        "item9  none  item10"
+    }
+}
+
+@media (max-width: 920px){
+    .main-content{
+        grid-template-columns: repeat(2,1fr);
+        grid-template-areas: 
+        "item1 item10"
+        "item2 item10"
+        "item3 item10"
+        "item4 item10"
+        "item5 item10"
+        "item6 item10"
+        "item7 item10"
+        "item8 item10"
+        "item9 item10"
+    }
+}
+
+@media (max-width: 625px){
+    .main-content{
+        grid-template-columns: repeat(2,1fr);
+        grid-template-areas: 
+        "item1  item2"
+        "item3  item4"
+        "item5  item6"
+        "item7  item8"
+        "item9  none"
+        "item10  item10"
+    }
+}
